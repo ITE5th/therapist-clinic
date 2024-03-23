@@ -1,0 +1,35 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "grduation project, smart clinic.",
+  "main": "server.ts",
+  "scripts": {
+    "tsc": "tsc -w",
+    "start": "concurrently \"tsc -w\" \"node --watch api/dist/server.js\"",
+    "serve": "node --watch api/dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITE5th/therapist-clinic.git"
+  },
+  "author": "madridista's team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITE5th/therapist-clinic/issues"
+  },
+  "homepage": "https://github.com/ITE5th/therapist-clinic#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "@types/pg": "^8.11.4",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1"
+  }
+}
